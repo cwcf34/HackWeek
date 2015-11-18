@@ -1,0 +1,1 @@
+<p>This project was made by Cody Cameron and Greg Halligan as a project for our Hack Week in our CS4830 course. Wed decided to manipulate the Yelp API to help people find restaurants and activities to do when they are in a new city.</p>
