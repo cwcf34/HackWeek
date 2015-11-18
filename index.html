@@ -21,6 +21,15 @@ $(function(){
   $("#find").click(function(){
     $("#main").load("home.php");
   });
+
+  $("#about").click(function(){
+    $("#main").load("about.php");
+  });
+
+  $("#contact").click(function(){
+    $("#main").load("contact.php");
+  });
+
 });
 </script>
 </script>
@@ -51,10 +60,10 @@ $(function(){
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Your Pure Day</a></li>
 
                 <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                    <a href="#" class="pure-menu-link">About</a>
+                    <a href="#" class="pure-menu-link" id='about'>About</a>
                 </li>
 
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id='contact'>Contact</a></li>
             </ul>
         </div>
     </div>
