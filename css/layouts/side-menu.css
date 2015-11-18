@@ -132,7 +132,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: rgb(66, 184, 221);
+        background: orange;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -251,5 +251,5 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 .button-secondary {
-            background: rgb(66, 184, 221); /* this is a light blue */
+            background: orange; /* this is a light blue */
         }
