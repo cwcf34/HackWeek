@@ -1,11 +1,11 @@
-
+<?php if(session_start()) { echo "woo";} ?>
   <div class="header">
 <script>var SELECTION;</script>
   <h1>OneWord</h1>
   <h2>Enter 1 Word</h2>
 </div>
 
-<form method="POST">
+<form action="process.php" method="POST">
 <label for="word">Word</label>
 <input type="text" name='myText' id="myText" style="background-color: #090067" placeholder="Houdini">
 <div class"content">
@@ -21,6 +21,10 @@
 <?php
 
 echo (htmlspecialchars($_POST['myText']));
+
+session_start();
+
+$_SESSION['USER'] = $_POST['myText'];
  ?>
 
 <?php } ?>
