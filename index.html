@@ -7,9 +7,9 @@
 
     <title>OneWord</title>
 
+<script src="js/api.js"></script>
 
-
-
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -30,8 +30,11 @@ $(function(){
     $("#main").load("contact.php");
   });
 
+  $("#youroneword").click(function(){
+    $("#main").load("youroneword.php");
+  });
+
 });
-</script>
 </script>
 
     <!--[if lte IE 8]>
@@ -57,7 +60,7 @@ $(function(){
 
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link" id='home'>Home</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Your OneWord</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id='youroneword'>Your OneWord</a></li>
 
                 <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
                     <a href="#" class="pure-menu-link" id='about'>About</a>
