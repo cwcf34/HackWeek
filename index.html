@@ -85,7 +85,16 @@ $(function(){
         </div>
     </div>
 </div>
+<?php
 
+  if (isset($_POST['myText'])) {?>
+
+<?php
+
+echo (htmlspecialchars($_POST['myText']));
+ ?>
+
+<?php } ?>
 
 
 
