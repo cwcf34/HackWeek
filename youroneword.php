@@ -5,6 +5,11 @@ $result = curl_exec($curl);
 echo $result;
 //var_dump(json_decode($result));
 
+if($_SESSION['USER']) {
+  echo $_SESSION['USER'];
+} else {
+  echo "WE DONT NEED NO WATER. LET THE MO";
+}
 ?>
 
 <iframe src="https://embed.spotify.com/?uri=spotify:track:4YZNILrv7RwA57GHmmvj7o" frameborder="0" allowtransparency="true"></iframe>
