@@ -31,7 +31,7 @@ $(function(){
     $("#main").load("contact.php");
   });
 
-  $("#youroneword").click(function(){
+  $(".youroneword").click(function(){
     $("#main").load("youroneword.php");
   });
 
@@ -61,7 +61,7 @@ $(function(){
 
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="#" class="pure-menu-link" id='home'>Home</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id='youroneword'>Your OneWord</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" class='youroneword'>Your OneWord</a></li>
 
                 <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
                     <a href="#" class="pure-menu-link" id='about'>About</a>
@@ -83,7 +83,9 @@ $(function(){
             <p>
                 OneWord is a website that allows you to create a playlist based one a single word. Give it a try!
             </p>
+
             <button id="find" type="submit" class="button-secondary pure-button">Create a Playlist!</button>
+            <button type="submit" class="button-secondary pure-button youroneword">View Your OneWord!</button>
         </div>
     </div>
 </div>

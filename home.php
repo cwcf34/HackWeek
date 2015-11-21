@@ -9,7 +9,7 @@
 <fieldset>
   <label for="word">Enter a Word: </label>
   <input type="text" name='myText' id="myText" placeholder="Houdini">
-  <p>Click the Button to see something awesome happen!</p>
+  <p>Click the button and then click on Your OneWord!</p>
 
   <button type="submit" class="button-secondary pure-button">Submit</button>
 </fieldset>
