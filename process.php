@@ -1,19 +1,16 @@
 <?php
 
-echo $_POST["myText"];
-
 
 if (isset($_POST['myText'])) {
 
-echo (htmlspecialchars($_POST['myText']));
+  $cookie_name = "word";
+  $cookie_value = (htmlspecialchars($_POST['myText']));
+  setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
 
-
-
-$_SESSION['USER'] = $_POST['myText'];
 
 
  }
 
- header("Location: localhost:8888/");
+ header("Location: http://codycameron.me");
 
  ?>
