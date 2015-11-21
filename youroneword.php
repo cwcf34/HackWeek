@@ -2,7 +2,6 @@
   <h1>OneWord</h1>
   <h2>Your One Word Playlist</h2>
 </div>
-
 <?php
 //echo $result;
 /*if(!isset($_COOKIE["word"])) {
@@ -21,14 +20,15 @@ $domDocument = new DOMDocument();
 $domDocument->loadXML( $xml );
 
 $value = $domDocument->getElementsByTagName( "track" );
+?> <br><div class="pure-g"> <?php
 foreach ( $value as $e ) {
     //echo substr($e->getAttribute( "href" ), 14)."<br>";
     $endtext = substr($e->getAttribute( "href" ), 14);
 
     ?>
-    <iframe src="https://embed.spotify.com/?uri=spotify:track:<?php echo $endtext;?>" frameborder="0" allowtransparency="true"></iframe>
-
+    <iframe class="pure-u-1-3" src="https://embed.spotify.com/?uri=spotify:track:<?php echo $endtext;?>" frameborder="0" allowtransparency="true"></iframe>
     <?php
 }
 
 ?>
+</div>
