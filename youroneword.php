@@ -1,3 +1,8 @@
+<div class="header">
+  <h1>OneWord</h1>
+  <h2>Your One Word Playlist</h2>
+</div>
+
 <?php
 //echo $result;
 /*if(!isset($_COOKIE["word"])) {

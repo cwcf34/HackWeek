@@ -5,7 +5,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+input {
+  background-color: black;
+}
 #main, h1, h2, h3 {
   color: white;
 }
@@ -140,7 +142,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: orange;
+        background: #00e600;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -259,5 +261,5 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 .button-secondary {
-            background: orange; /* this is a light blue */
+            background: #00e600; /* this is a light blue */
         }
