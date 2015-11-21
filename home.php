@@ -1,5 +1,4 @@
-<?php if(session_start()) { echo "woo";} ?>
-  <div class="header">
+<div class="header">
 <script>var SELECTION;</script>
   <h1>OneWord</h1>
   <h2>Enter 1 Word</h2>
@@ -14,17 +13,3 @@
 <button type="submit" class="button-secondary pure-button">Submit</button>
 </form>
   </div>
-<?php
-
-  if (isset($_POST['myText'])) {?>
-
-<?php
-
-echo (htmlspecialchars($_POST['myText']));
-
-session_start();
-
-$_SESSION['USER'] = $_POST['myText'];
- ?>
-
-<?php } ?>
