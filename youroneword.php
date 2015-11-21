@@ -1,11 +1,29 @@
 <?php
-$curl = curl_init('https://api.spotify.com/v1/search?q=incredible&type=track&limit=1');
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$result = curl_exec($curl);
-echo $result;
-//var_dump(json_decode($result));
+//echo $result;
+/*if(!isset($_COOKIE["word"])) {
+      echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+      echo "Cookie '" . $cookie_name . "' is set!<br>";
+      echo "Value is: " . $_COOKIE["word"];
+}*/
+
+$newstring = substr_replace("http://ws.spotify.com/search/1/track?q=", $_COOKIE["word"], 39, 0);
+
+$url = $newstring;
+
+$xml = file_get_contents( $url );
+$domDocument = new DOMDocument();
+$domDocument->loadXML( $xml );
+
+$value = $domDocument->getElementsByTagName( "track" );
+foreach ( $value as $e ) {
+    //echo substr($e->getAttribute( "href" ), 14)."<br>";
+    $endtext = substr($e->getAttribute( "href" ), 14);
+
+    ?>
+    <iframe src="https://embed.spotify.com/?uri=spotify:track:<?php echo $endtext;?>" frameborder="0" allowtransparency="true"></iframe>
+
+    <?php
+}
 
 ?>
-
-<iframe src="https://embed.spotify.com/?uri=spotify:track:4YZNILrv7RwA57GHmmvj7o" frameborder="0" allowtransparency="true"></iframe>
-<iframe src="https://embed.spotify.com/?uri=spotify:track:5JunxkcjfCYcY7xJ29tLai" frameborder="0" allowtransparency="true"></iframe>
