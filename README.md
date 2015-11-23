@@ -11,4 +11,4 @@ Note: Spotify's embed feature is apparently extremely limited. To be able to pla
 
 WARNING!!!!!
 
-Do not try to use more than one word. It is called OneWord for a reason! (Two words do not work.)
+Do not try to use more than one word. It is called OneWord for a reason! (Two words does not work.)
